@@ -140,17 +140,8 @@ https://pytorch.org/get-started/locally/
 
 # Single-process (CPU or 1 GPU) — same hyperparameters as above
 # Multi-GPU (2 GPUs, DDP)
-PYTHONWARNINGS=ignore torchrun --standalone --nproc_per_node=2 train_lottomax_set.py \
-  --data_path lottomax.csv \
-  --epochs 16 \
-  --context_len 32 \
-  --batch_size 16 \
-  --d_model 128 \
-  --nhead 4 \
-  --num_layers 4 \
-  --dropout 0.1 \
-  --eval_every 1000000 \
-  --no_amp
+PYTHONWARNINGS=ignore torchrun --standalone --nproc_per_node=2 train_lottomax_set.py --data_path lottomax.csv --epochs 16 --context_len 32 --batch_size 16 --d_model 128 --nhead 4 --num_layers 4 --dropout 0.1 --eval_every 1000000 --no_amp
+
 
 The training script supports:
 
