@@ -132,7 +132,7 @@ https://pytorch.org/get-started/locally/
 
     python train_lottomax_set.py \
       --data_path lottomax.csv \
-      --epochs 5 \
+      --epochs 16 \
       --context_len 32 \
       --batch_size 16
 
